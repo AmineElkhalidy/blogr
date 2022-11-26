@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <React.Fragment>
       {/* Hero section */}
-      <section className="min-h-[calc(100vh-4rem)] h-full bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem] ">
+      <section className="min-h-[calc(100vh-4rem)] h-full bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
         {/* Container */}
         <div className="flex justify-center ite">
           <div className="flex flex-col justify-center items-center">
@@ -38,9 +38,9 @@ const Home: React.FC = () => {
         {/* Container */}
         <div className="grid space-y-10 md:grid-cols-2 md:space-y-0">
           {/* Image container */}
-          <div className="grid order-1">
+          <div className="grid md:order-1 relative">
             <img
-              className="justify-self-center md:h-[30rem]"
+              className="justify-self-center md:h-[25rem] md:justify-self-end"
               src={DesignMobile}
               alt="Circle with a window"
             />
@@ -74,6 +74,35 @@ const Home: React.FC = () => {
                 you're in full control.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Art */}
+      <section className="bg-darkBlue my-16 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem]">
+        {/* Container */}
+        <div className="grid md:grid-cols-2 overflow-hidden">
+          {/* Image */}
+          <div className="relative ">
+            <img className="sm:absolute -top-24" src={Circle} alt="Circle" />
+            <img
+              className="absolute -top-16"
+              src={Phones}
+              alt="Phones circled"
+            />
+          </div>
+
+          {/* Art Data */}
+          <div className="text-center space-y-6 py-16 -mt-24">
+            <h2 className="text-3xl font-semibold text-white">
+              State of the Art Infrastructure
+            </h2>
+            <p className="text-gray-300 px-4">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
           </div>
         </div>
       </section>

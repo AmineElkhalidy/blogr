@@ -5,6 +5,20 @@ body {
   @apply font-sans;
 }
 
+.hero-mobile {
+  background-image: url("./assets/images/bg-pattern-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero-desktop {
+  background-image: url("./assets/images/bg-pattern-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

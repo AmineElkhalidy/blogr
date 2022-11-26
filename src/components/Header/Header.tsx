@@ -19,20 +19,20 @@ const Header: React.FC = () => {
 
   return (
     <header className="relative w-full h-full bg-gradient-to-r from-lightRed to-lighterRed">
-      <nav className="h-16 flex justify-between items-center px-6">
+      <nav className="h-16 max-w-6xl mx-auto flex justify-between items-center px-6">
         <img
-          className="h-6"
+          className="h-6 md:h-8"
           src={Logo}
           alt="Blogr navbar logo"
           loading="lazy"
         />
         {/* Mobile menu */}
         {active && (
-          <div className="absolute top-20 left-0 w-full">
+          <div className="absolute top-20 left-0 w-full md:hidden">
             <div className="px-6">
               <div className="bg-white rounded-md p-8">
                 {/* Navigation Links */}
-                <ul className="flex flex-col items-center justify-center gap-6 border-b-2 py-4">
+                <ul className="flex flex-col items-center justify-center gap-6 border-b-2 border-gray-200 py-4">
                   <li>
                     <a
                       className="inline-flex items-center gap-1 text-darkBlue font-semibold"
@@ -109,22 +109,23 @@ const Header: React.FC = () => {
         {active ? (
           <span
             onClick={() => setActive(false)}
-            className="inline-flex items-center justify-center"
+            className="md:hidden inline-flex items-center justify-center"
           >
             <XMarkIcon className="h-7 w-7 cursor-pointer text-white" />
           </span>
         ) : (
           <span
             onClick={() => setActive(true)}
-            className="inline-flex items-center justify-center"
+            className="md:hidden inline-flex items-center justify-center"
           >
             <Bars3Icon className="h-7 w-7 cursor-pointer text-white" />
           </span>
         )}
+
         {/* Desktop menu */}
-        <div className="hidden">
+        <div className="hidden md:flex justify-between ite w-full">
           {/* Navigation Links */}
-          <ul>
+          <ul className="flex ml-12 gap-6 text-gray-200 font-semibold pt-2">
             <li>
               <a className="inline-flex items-center gap-1" href="#product">
                 Product{" "}
@@ -154,11 +155,14 @@ const Header: React.FC = () => {
           </ul>
 
           {/* Login & Sign Up buttons container */}
-          <div>
-            <a className="" href="#login">
+          <div className="flex justify-center items-center gap-6">
+            <a className="text-white font-semibold" href="#login">
               Login
             </a>
-            <a className="" href="#sign-up">
+            <a
+              className="text-lightRed font-semibold py-2 px-6 rounded-full bg-white"
+              href="#sign-up"
+            >
               Sign Up
             </a>
           </div>

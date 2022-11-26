@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         </h2>
 
         {/* Container */}
-        <div className="grid space-y-10 md:grid-cols-2 md:space-y-0 md:gap-6">
+        <div className="grid space-y-10 md:grid-cols-2 md:space-y-0">
           {/* Image container */}
           <div className="grid order-1">
             <img

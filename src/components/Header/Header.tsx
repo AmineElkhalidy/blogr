@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="relative w-full h-full bg-gradient-to-r from-lightRed to-lighterRed">
-      <nav className="h-16 max-w-6xl mx-auto flex justify-between items-center px-6">
+      <nav className="h-16 max-w-6xl mx-auto flex justify-between items-center px-6 md:px-0">
         <img
           className="h-6 md:h-8"
           src={Logo}
@@ -123,9 +123,9 @@ const Header: React.FC = () => {
         )}
 
         {/* Desktop menu */}
-        <div className="hidden md:flex justify-between ite w-full">
+        <div className="hidden md:flex justify-between items-center w-full">
           {/* Navigation Links */}
-          <ul className="flex ml-12 gap-6 text-gray-200 font-semibold pt-2">
+          <ul className="flex ml-12 gap-6 text-gray-200 font-semibold">
             <li>
               <a className="inline-flex items-center gap-1" href="#product">
                 Product{" "}

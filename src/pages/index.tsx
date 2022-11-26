@@ -1,7 +1,7 @@
 import React from "react";
 
 const Home: React.FC = () => {
-  return <header className=""></header>;
+  return <React.Fragment></React.Fragment>;
 };
 
 export default Home;

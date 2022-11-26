@@ -11,6 +11,7 @@ import Phones from "../assets/images/illustration-phones.svg";
 const Home: React.FC = () => {
   return (
     <React.Fragment>
+      {/* Hero section */}
       <section className="min-h-[calc(100vh-4rem)] h-full bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem] ">
         {/* Container */}
         <div className="flex justify-center ite">
@@ -29,32 +30,30 @@ const Home: React.FC = () => {
       </section>
 
       {/* Designed for the future section */}
-      <section className="py-16">
-        <h2 className="text-darkBlue font-semibold text-xl text-center mb-8">
+      <section className="py-16 max-w-6xl mx-auto">
+        <h2 className="text-darkBlue font-semibold text-xl text-center mb-8 md:text-3xl">
           Designed for the future
         </h2>
 
         {/* Container */}
-        <div className="grid space-y-10">
+        <div className="grid space-y-10 md:grid-cols-2 md:space-y-0 md:gap-6">
           {/* Image container */}
-          <div>
-            <div className="grid">
-              <img
-                className=""
-                src={DesignDesktop}
-                alt="Circle with a window"
-              />
-            </div>
+          <div className="grid order-1">
+            <img
+              className="justify-self-center md:h-[30rem]"
+              src={DesignMobile}
+              alt="Circle with a window"
+            />
           </div>
 
           {/* Paragraphs container */}
-          <div className="space-y-5">
+          <div className="space-y-10">
             {/* Paragraph 1 */}
             <div className="space-y-3">
-              <h3 className="px-10 text-xl text-center font-semibold">
+              <h3 className="md:text-left text-darkBlue px-10 text-2xl text-center font-semibold md:px-0">
                 Introducing an extensible editor
               </h3>
-              <p className="text-center text-darkGrayishBue px-4">
+              <p className="md:text-left text-center text-darkGrayishBue px-4 md:px-0">
                 Blogr features an exceedingly intuitive interface which lets you
                 focus on one thing: creating content. The editor supports
                 management of multiple blogs and allows easy manipulation of
@@ -65,10 +64,10 @@ const Home: React.FC = () => {
 
             {/* Paragraph 2 */}
             <div className="space-y-3">
-              <h3 className="px-8 text-xl text-center font-semibold">
+              <h3 className="md:text-left text-darkBlue px-8 text-2xl text-center font-semibold md:px-0">
                 Robust content management
               </h3>
-              <p className="text-center text-darkGrayishBue px-4">
+              <p className="md:text-left text-center text-darkGrayishBue px-4 md:px-0">
                 Flexible content management enables users to easily move through
                 posts, Increase the usability of your blog by adding customized
                 categories, sections, format, or flow. With this functionality,

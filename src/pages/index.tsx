@@ -110,7 +110,7 @@ const Home: React.FC = () => {
       {/* Laptop */}
       <section className="my-16">
         {/* Container */}
-        <div>
+        <div className="grid space-y-10 md:grid-cols-2 md:space-y-0">
           {/* Image container */}
           <div className="grid">
             <img
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
           </div>
 
           {/* Paragraphs container */}
-          <div className="space-y-10">
+          <div className="space-y-10 grid md:items-end">
             {/* Paragraph 1 */}
             <div className="space-y-3">
               <h3 className="md:text-left text-darkBlue px-10 text-2xl text-center font-semibold md:px-0">

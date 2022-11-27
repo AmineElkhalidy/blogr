@@ -15,19 +15,26 @@ const Home: React.FC = () => {
   return (
     <React.Fragment>
       {/* Hero section */}
-      <section className="min-h-[calc(100vh-4rem)] h-full bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
+      <section className="min-h-[calc(100vh-4rem)] bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
         {/* Container */}
-        <div className="flex justify-center ite">
-          <div className="flex flex-col justify-center items-center">
-            {/* <h1>A modern publishing platform</h1>
-            <p>Grow your audience and build your online brand</p> */}
+        <div className="flex justify-center items-center">
+          <div className="mt-20 md:mt-24 xl:mt-32">
+            <h1 className="text-4xl text-center font-semibold text-white mb-3 md:text-5xl lg:text-6xl">
+              A modern publishing platform
+            </h1>
+            <p className="text-gray-100 text-lg mb-8 text-center">
+              Grow your audience and build your online brand
+            </p>
 
-            {/* Buttons container */}
-            {/* <div className="flex gap-6">
-              <button>Start for Free</button>
+            <div className="flex gap-6 justify-center items-center">
+              <button className="py-3 px-6 bg-white rounded-full font-semibold text-lightRed">
+                Start for Free
+              </button>
 
-              <button>Learn More</button>
-            </div> */}
+              <button className="py-3 px-6 border border-white rounded-full text-gray-100 font-semibold">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </section>

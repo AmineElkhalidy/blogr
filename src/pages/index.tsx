@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <section className="min-h-[calc(100vh-4rem)] bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
         {/* Container */}
         <div className="flex justify-center items-center">
-          <div className="mt-20 md:mt-24 xl:mt-32">
+          <div className="mt-36 md:mt-48">
             <h1 className="text-4xl text-center font-semibold text-white mb-3 md:text-5xl lg:text-6xl">
               A modern publishing platform
             </h1>

@@ -8,6 +8,9 @@ import LaptopMobile from "../assets/images/illustration-laptop-mobile.svg";
 import LaptopDesktop from "../assets/images/illustration-laptop-desktop.svg";
 import Phones from "../assets/images/illustration-phones.svg";
 
+// Footer
+import Footer from "../components/Footer/Footer";
+
 const Home: React.FC = () => {
   return (
     <React.Fragment>
@@ -151,6 +154,9 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </React.Fragment>
   );
 };

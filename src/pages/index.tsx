@@ -81,7 +81,7 @@ const Home: React.FC = () => {
       {/* Art */}
       <section className="bg-darkBlue my-16 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem]">
         {/* Container */}
-        <div className="grid md:grid-cols-2 overflow-hidden">
+        <div className="grid md:grid-cols-2">
           {/* Image */}
           <div className="relative ">
             <img className="sm:absolute -top-24" src={Circle} alt="Circle" />
@@ -93,16 +93,61 @@ const Home: React.FC = () => {
           </div>
 
           {/* Art Data */}
-          <div className="text-center space-y-6 py-16 -mt-24">
+          <div className="text-center space-y-6 py-16 -mt-[5.5rem]">
             <h2 className="text-3xl font-semibold text-white">
               State of the Art Infrastructure
             </h2>
-            <p className="text-gray-300 px-4">
+            <p className="text-gray-200 px-4">
               With reliability and speed in mind, worldwide data centers provide
               the backbone for ultra-fast connectivity. This ensures your site
               will load instantly, no matter where your readers are, keeping
               your site competitive.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Laptop */}
+      <section className="my-16">
+        {/* Container */}
+        <div>
+          {/* Image container */}
+          <div className="grid">
+            <img
+              className="justify-self-center"
+              src={LaptopMobile}
+              alt="Laptop with a circle"
+            />
+          </div>
+
+          {/* Paragraphs container */}
+          <div className="space-y-10">
+            {/* Paragraph 1 */}
+            <div className="space-y-3">
+              <h3 className="md:text-left text-darkBlue px-10 text-2xl text-center font-semibold md:px-0">
+                Free, open, simple
+              </h3>
+              <p className="md:text-left text-center text-darkGrayishBue px-4 md:px-0">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown.Extensibility with
+                blugins and functionality or change the looks of a blog.
+              </p>
+            </div>
+
+            {/* Paragraph 2 */}
+            <div className="space-y-3">
+              <h3 className="md:text-left text-darkBlue px-8 text-2xl text-center font-semibold md:px-0">
+                Powerful tooling
+              </h3>
+              <p className="md:text-left text-center text-darkGrayishBue px-4 md:px-0">
+                Flexible content management enables users to easily move through
+                posts, Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you're in full control.
+              </p>
+            </div>
           </div>
         </div>
       </section>

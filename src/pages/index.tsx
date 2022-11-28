@@ -27,11 +27,11 @@ const Home: React.FC = () => {
             </p>
 
             <div className="flex gap-6 justify-center items-center">
-              <button className="py-3 px-6 bg-white rounded-full font-semibold text-lightRed">
+              <button className="py-3 px-6 bg-white rounded-full font-semibold text-lightRed duration-300 hover:bg-transparent hover:text-white hover:border">
                 Start for Free
               </button>
 
-              <button className="py-3 px-6 border border-white rounded-full text-gray-100 font-semibold">
+              <button className="py-3 px-6 border border-white rounded-full text-gray-100 font-semibold duration-300 hover:bg-white hover:text-lightRed">
                 Learn More
               </button>
             </div>

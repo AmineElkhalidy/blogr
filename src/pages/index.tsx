@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
     <React.Fragment>
       {/* Hero section */}
-      <section className="min-h-[calc(100vh-4rem)] bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
+      <section className="min-h-[calc(100vh-4rem)] px-6 sm:px-0 bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
         {/* Container */}
         <div className="flex justify-center items-center">
           <div className="mt-36 md:mt-48">

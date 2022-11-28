@@ -17,6 +17,10 @@ const Header: React.FC = () => {
   const [changeArrowTwo, setChangeArrowTwo] = useState(false);
   const [changeArrowThree, setChangeArrowThree] = useState(false);
 
+  const [changeArrowDeskOne, setChangeArrowDeskOne] = useState(false);
+  const [changeArrowDeskTwo, setChangeArrowDeskTwo] = useState(false);
+  const [changeArrowDeskThree, setChangeArrowDeskThree] = useState(false);
+
   return (
     <header className="relative w-full h-full bg-gradient-to-r from-lightRed to-lighterRed">
       <nav className="h-16 max-w-6xl mx-auto flex justify-between items-center px-6 2xl:px-0">
@@ -181,30 +185,105 @@ const Header: React.FC = () => {
           {/* Navigation Links */}
           <ul className="flex ml-12 gap-6 text-gray-100 font-semibold">
             <li>
-              <a className="inline-flex items-center gap-1" href="#product">
-                Product{" "}
-                <span>
-                  <ChevronDownIcon className="w-4 h-4" />
-                </span>
-              </a>
+              {changeArrowDeskOne ? (
+                <>
+                  <a
+                    onClick={() => setChangeArrowDeskOne(false)}
+                    className="inline-flex items-center gap-1"
+                    href="#product"
+                  >
+                    Product{" "}
+                    <span>
+                      <ChevronUpIcon className="w-4 h-4" />
+                    </span>
+                  </a>
+                  <ul className="absolute top-12 space-y-2">
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
+                </>
+              ) : (
+                <a
+                  onClick={() => setChangeArrowDeskOne(true)}
+                  className="inline-flex items-center gap-1"
+                  href="#product"
+                >
+                  Product{" "}
+                  <span>
+                    <ChevronDownIcon className="w-4 h-4" />
+                  </span>
+                </a>
+              )}
             </li>
 
             <li>
-              <a className="inline-flex items-center gap-1" href="#company">
-                Company{" "}
-                <span>
-                  <ChevronDownIcon className="w-4 h-4" />
-                </span>
-              </a>
+              {changeArrowDeskTwo ? (
+                <>
+                  <a
+                    onClick={() => setChangeArrowDeskTwo(false)}
+                    className="inline-flex items-center gap-1"
+                    href="#product"
+                  >
+                    Company{" "}
+                    <span>
+                      <ChevronUpIcon className="w-4 h-4" />
+                    </span>
+                  </a>
+                  <ul className="absolute top-12 space-y-2">
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                  </ul>
+                </>
+              ) : (
+                <a
+                  onClick={() => setChangeArrowDeskTwo(true)}
+                  className="inline-flex items-center gap-1"
+                  href="#product"
+                >
+                  Company{" "}
+                  <span>
+                    <ChevronDownIcon className="w-4 h-4" />
+                  </span>
+                </a>
+              )}
             </li>
 
             <li>
-              <a className="inline-flex items-center gap-1" href="#connect">
-                Connect{" "}
-                <span>
-                  <ChevronDownIcon className="w-4 h-4" />
-                </span>
-              </a>
+              {changeArrowDeskThree ? (
+                <>
+                  <a
+                    onClick={() => setChangeArrowDeskThree(false)}
+                    className="inline-flex items-center gap-1"
+                    href="#product"
+                  >
+                    Connect{" "}
+                    <span>
+                      <ChevronUpIcon className="w-4 h-4" />
+                    </span>
+                  </a>
+                  <ul className="absolute top-12 space-y-2">
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                </>
+              ) : (
+                <a
+                  onClick={() => setChangeArrowDeskThree(true)}
+                  className="inline-flex items-center gap-1"
+                  href="#product"
+                >
+                  Connect{" "}
+                  <span>
+                    <ChevronDownIcon className="w-4 h-4" />
+                  </span>
+                </a>
+              )}
             </li>
           </ul>
 

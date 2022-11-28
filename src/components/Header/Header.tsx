@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                           </span>
                         </a>
 
-                        <ul className="bg-yellow-600">
+                        <ul className="text-center space-y-2 mt-3 text-darkGrayishBue">
                           <li>Overview</li>
                           <li>Pricing</li>
                           <li>Marketplace</li>
@@ -71,16 +71,25 @@ const Header: React.FC = () => {
 
                   <li>
                     {changeArrowTwo ? (
-                      <a
-                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
-                        href="#product"
-                        onClick={() => setChangeArrowTwo(false)}
-                      >
-                        Company{" "}
-                        <span>
-                          <ChevronUpIcon className="w-4 h-4 text-lightRed" />
-                        </span>
-                      </a>
+                      <>
+                        <a
+                          className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                          href="#product"
+                          onClick={() => setChangeArrowTwo(false)}
+                        >
+                          Company{" "}
+                          <span>
+                            <ChevronUpIcon className="w-4 h-4 text-lightRed" />
+                          </span>
+                        </a>
+
+                        <ul className="text-center space-y-2 mt-3 text-darkGrayishBue">
+                          <li>About</li>
+                          <li>Team</li>
+                          <li>Blog</li>
+                          <li>Careers</li>
+                        </ul>
+                      </>
                     ) : (
                       <a
                         className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
@@ -97,16 +106,24 @@ const Header: React.FC = () => {
 
                   <li>
                     {changeArrowThree ? (
-                      <a
-                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
-                        href="#product"
-                        onClick={() => setChangeArrowThree(false)}
-                      >
-                        Connect{" "}
-                        <span>
-                          <ChevronUpIcon className="w-4 h-4 text-lightRed" />
-                        </span>
-                      </a>
+                      <>
+                        <a
+                          className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                          href="#product"
+                          onClick={() => setChangeArrowThree(false)}
+                        >
+                          Connect{" "}
+                          <span>
+                            <ChevronUpIcon className="w-4 h-4 text-lightRed" />
+                          </span>
+                        </a>
+
+                        <ul className="text-center space-y-2 mt-3 text-darkGrayishBue">
+                          <li>Contact</li>
+                          <li>Newsletter</li>
+                          <li>LinkedIn</li>
+                        </ul>
+                      </>
                     ) : (
                       <a
                         className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"

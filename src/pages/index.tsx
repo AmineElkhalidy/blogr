@@ -41,7 +41,7 @@ const Home: React.FC = () => {
 
       {/* Designed for the future section */}
       <section className="py-16 max-w-6xl mx-auto px-6 2xl:px-0">
-        <h2 className="text-darkBlue font-semibold text-xl text-center mb-8 md:text-3xl">
+        <h2 className="text-darkBlue font-semibold text-2xl text-center mb-10 md:text-3xl">
           Designed for the future
         </h2>
 
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
           {/* Image container */}
           <div className="grid md:order-1 relative">
             <img
-              className="justify-self-center md:h-[25rem] md:justify-self-end"
+              className="justify-self-center md:justify-self-end"
               src={DesignMobile}
               alt="Circle with a window"
             />

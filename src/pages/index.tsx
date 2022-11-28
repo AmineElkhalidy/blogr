@@ -89,12 +89,13 @@ const Home: React.FC = () => {
       </section>
 
       {/* Art */}
-      <section className="bg-darkBlue my-16 px-6 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem] 2xl:px-0">
+      <section className="bg-darkBlue my-20 px-6 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem] 2xl:px-0">
         {/* Container */}
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-2 space-y-4">
           {/* Image */}
-          <div className="relative ">
-            <img className="sm:absolute -top-24" src={Circle} alt="Circle" />
+          <div className="relative">
+            <img className="" src={Circle} alt="Circle" />
+
             <img
               className="absolute -top-16"
               src={Phones}
@@ -103,7 +104,7 @@ const Home: React.FC = () => {
           </div>
 
           {/* Art Data */}
-          <div className="text-center space-y-6 py-16 -mt-[5.5rem]">
+          <div className="text-center space-y-6 py-6">
             <h2 className="text-3xl font-semibold text-white">
               State of the Art Infrastructure
             </h2>

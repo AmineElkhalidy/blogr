@@ -34,63 +34,100 @@ const Header: React.FC = () => {
                 {/* Navigation Links */}
                 <ul className="flex flex-col items-center justify-center gap-6 border-b-2 border-gray-200 py-4">
                   <li>
-                    <a
-                      className="inline-flex items-center gap-1 text-darkBlue font-semibold"
-                      href="#product"
-                    >
-                      Product{" "}
-                      {!changeArrowOne ? (
-                        <span onClick={() => setChangeArrowOne(true)}>
+                    {changeArrowOne ? (
+                      <>
+                        <a
+                          className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                          href="#product"
+                          onClick={() => setChangeArrowOne(false)}
+                        >
+                          Product{" "}
+                          <span>
+                            <ChevronUpIcon className="w-4 h-4 text-lightRed" />
+                          </span>
+                        </a>
+
+                        <ul className="bg-yellow-600">
+                          <li>Overview</li>
+                          <li>Pricing</li>
+                          <li>Marketplace</li>
+                          <li>Features</li>
+                          <li>Integrations</li>
+                        </ul>
+                      </>
+                    ) : (
+                      <a
+                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                        href="#product"
+                        onClick={() => setChangeArrowOne(true)}
+                      >
+                        Product{" "}
+                        <span>
                           <ChevronDownIcon className="w-4 h-4 text-lightRed" />
                         </span>
-                      ) : (
-                        <span onClick={() => setChangeArrowOne(false)}>
-                          <ChevronUpIcon className="w-4 h-4 text-lightRed" />
-                        </span>
-                      )}
-                    </a>
+                      </a>
+                    )}
                   </li>
 
                   <li>
-                    <a
-                      className="inline-flex items-center gap-1 text-darkBlue font-semibold"
-                      href="#company"
-                    >
-                      Company{" "}
-                      {!changeArrowTwo ? (
-                        <span onClick={() => setChangeArrowTwo(true)}>
-                          <ChevronDownIcon className="w-4 h-4 text-lightRed" />
-                        </span>
-                      ) : (
-                        <span onClick={() => setChangeArrowTwo(false)}>
+                    {changeArrowTwo ? (
+                      <a
+                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                        href="#product"
+                        onClick={() => setChangeArrowTwo(false)}
+                      >
+                        Company{" "}
+                        <span>
                           <ChevronUpIcon className="w-4 h-4 text-lightRed" />
                         </span>
-                      )}
-                    </a>
+                      </a>
+                    ) : (
+                      <a
+                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                        href="#product"
+                        onClick={() => setChangeArrowTwo(true)}
+                      >
+                        Company{" "}
+                        <span>
+                          <ChevronDownIcon className="w-4 h-4 text-lightRed" />
+                        </span>
+                      </a>
+                    )}
                   </li>
 
                   <li>
-                    <a
-                      className="inline-flex items-center gap-1 text-darkBlue font-semibold"
-                      href="#connect"
-                    >
-                      Connect{" "}
-                      {!changeArrowThree ? (
-                        <span onClick={() => setChangeArrowThree(true)}>
-                          <ChevronDownIcon className="w-4 h-4 text-lightRed" />
-                        </span>
-                      ) : (
-                        <span onClick={() => setChangeArrowThree(false)}>
+                    {changeArrowThree ? (
+                      <a
+                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                        href="#product"
+                        onClick={() => setChangeArrowThree(false)}
+                      >
+                        Connect{" "}
+                        <span>
                           <ChevronUpIcon className="w-4 h-4 text-lightRed" />
                         </span>
-                      )}
-                    </a>
+                      </a>
+                    ) : (
+                      <a
+                        className="inline-flex items-center gap-1 text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                        href="#product"
+                        onClick={() => setChangeArrowThree(true)}
+                      >
+                        Connect{" "}
+                        <span>
+                          <ChevronDownIcon className="w-4 h-4 text-lightRed" />
+                        </span>
+                      </a>
+                    )}
                   </li>
                 </ul>
 
                 {/* Login & Sign Up buttons container */}
                 <div className="flex flex-col justify-center items-center gap-4 mt-6">
-                  <a className="text-darkBlue font-semibold" href="#login">
+                  <a
+                    className="text-darkBlue font-semibold duration-300 hover:text-lightRed"
+                    href="#login"
+                  >
                     Login
                   </a>
                   <a
@@ -111,14 +148,14 @@ const Header: React.FC = () => {
             onClick={() => setActive(false)}
             className="md:hidden inline-flex items-center justify-center"
           >
-            <XMarkIcon className="h-7 w-7 cursor-pointer text-white" />
+            <XMarkIcon className="h-7 w-7 cursor-pointer text-white duration-300 hover:text-darkBlue" />
           </span>
         ) : (
           <span
             onClick={() => setActive(true)}
             className="md:hidden inline-flex items-center justify-center"
           >
-            <Bars3Icon className="h-7 w-7 cursor-pointer text-white" />
+            <Bars3Icon className="h-7 w-7 cursor-pointer text-white duration-300 hover:text-darkBlue" />
           </span>
         )}
 

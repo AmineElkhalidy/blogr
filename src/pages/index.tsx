@@ -40,7 +40,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Designed for the future section */}
-      <section className="py-16 max-w-6xl mx-auto">
+      <section className="py-16 max-w-6xl mx-auto px-6 2xl:px-0">
         <h2 className="text-darkBlue font-semibold text-xl text-center mb-8 md:text-3xl">
           Designed for the future
         </h2>
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Art */}
-      <section className="bg-darkBlue my-16 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem]">
+      <section className="bg-darkBlue my-16 px-6 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem] 2xl:px-0">
         {/* Container */}
         <div className="grid md:grid-cols-2">
           {/* Image */}
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
             <h2 className="text-3xl font-semibold text-white">
               State of the Art Infrastructure
             </h2>
-            <p className="text-gray-200 px-4">
+            <p className="text-gray-200">
               With reliability and speed in mind, worldwide data centers provide
               the backbone for ultra-fast connectivity. This ensures your site
               will load instantly, no matter where your readers are, keeping
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Laptop */}
-      <section className="my-16">
+      <section className="my-16 px-6 2xl:px-0">
         {/* Container */}
         <div className="grid space-y-10 md:grid-cols-2 md:space-y-0">
           {/* Image container */}
@@ -134,10 +134,10 @@ const Home: React.FC = () => {
           <div className="space-y-10 grid md:items-end">
             {/* Paragraph 1 */}
             <div className="space-y-3">
-              <h3 className="md:text-left text-darkBlue px-10 text-2xl text-center font-semibold md:px-0">
+              <h3 className="md:text-left text-darkBlue text-2xl text-center font-semibold md:px-0">
                 Free, open, simple
               </h3>
-              <p className="md:text-left text-center text-darkGrayishBue px-4 md:px-0">
+              <p className="md:text-left text-center text-darkGrayishBue md:px-0">
                 Blogr features an exceedingly intuitive interface which lets you
                 focus on one thing: creating content. The editor supports
                 management of multiple blogs and allows easy manipulation of
@@ -148,10 +148,10 @@ const Home: React.FC = () => {
 
             {/* Paragraph 2 */}
             <div className="space-y-3">
-              <h3 className="md:text-left text-darkBlue px-8 text-2xl text-center font-semibold md:px-0">
+              <h3 className="md:text-left text-darkBlue text-2xl text-center font-semibold md:px-0">
                 Powerful tooling
               </h3>
-              <p className="md:text-left text-center text-darkGrayishBue px-4 md:px-0">
+              <p className="md:text-left text-center text-darkGrayishBue md:px-0">
                 Flexible content management enables users to easily move through
                 posts, Increase the usability of your blog by adding customized
                 categories, sections, format, or flow. With this functionality,

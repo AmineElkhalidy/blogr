@@ -207,7 +207,9 @@ const Header: React.FC = () => {
                 </>
               ) : (
                 <a
-                  onClick={() => setChangeArrowDeskOne(true)}
+                  onClick={() => {
+                    setChangeArrowDeskOne(true);
+                  }}
                   className="inline-flex items-center gap-1"
                   href="#product"
                 >
@@ -223,7 +225,9 @@ const Header: React.FC = () => {
               {changeArrowDeskTwo ? (
                 <>
                   <a
-                    onClick={() => setChangeArrowDeskTwo(false)}
+                    onClick={() => {
+                      setChangeArrowDeskTwo(false);
+                    }}
                     className="inline-flex items-center gap-1"
                     href="#product"
                   >
@@ -241,7 +245,10 @@ const Header: React.FC = () => {
                 </>
               ) : (
                 <a
-                  onClick={() => setChangeArrowDeskTwo(true)}
+                  onClick={() => {
+                    setChangeArrowDeskOne(false);
+                    setChangeArrowDeskTwo(true);
+                  }}
                   className="inline-flex items-center gap-1"
                   href="#product"
                 >
@@ -274,7 +281,10 @@ const Header: React.FC = () => {
                 </>
               ) : (
                 <a
-                  onClick={() => setChangeArrowDeskThree(true)}
+                  onClick={() => {
+                    setChangeArrowDeskTwo(false);
+                    setChangeArrowDeskThree(true);
+                  }}
                   className="inline-flex items-center gap-1"
                   href="#product"
                 >

@@ -108,7 +108,7 @@ const Home: React.FC = () => {
           </div>
 
           {/* Art Data */}
-          <div className="text-center grid md:items-center md:text-left">
+          <div className="text-center pb-6 grid md:items-center md:text-left">
             <div>
               <h2 className="text-3xl font-semibold text-white mb-3">
                 State of the Art Infrastructure

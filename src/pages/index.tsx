@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
     <React.Fragment>
       {/* Hero section */}
-      <section className="min-h-[calc(100vh-4rem)] px-6 sm:px-0 bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
+      <section className="min-h-[calc(100vh-4rem)] sm:px-0 bg-gradient-to-r from-lightRed to-lighterRed bg-opacity-20 rounded-bl-[6rem] sm:rounded-bl-[10rem]">
         {/* Container */}
         <div className="flex justify-center items-center">
           <div className="mt-36 md:mt-48">
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
       {/* Art */}
       <section className="bg-darkBlue my-20 px-6 rounded-tr-[6rem]  rounded-bl-[6rem] md:rounded-tr-[10rem] md:rounded-bl-[10rem] 2xl:px-0">
         {/* Container */}
-        <div className="grid md:grid-cols-2 space-y-4">
+        <div className="grid md:grid-cols-2 space-y-2">
           {/* Image */}
           <div className="relative">
             <img
@@ -108,9 +108,9 @@ const Home: React.FC = () => {
           </div>
 
           {/* Art Data */}
-          <div className="text-center space-y-6 p-6 grid md:items-center md:text-left">
+          <div className="text-center grid md:items-center md:text-left">
             <div>
-              <h2 className="text-3xl font-semibold text-white">
+              <h2 className="text-3xl font-semibold text-white mb-3">
                 State of the Art Infrastructure
               </h2>
               <p className="text-gray-200">

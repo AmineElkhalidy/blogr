@@ -32,9 +32,9 @@ const Header: React.FC = () => {
         />
         {/* Mobile menu */}
         {active && (
-          <div className="absolute top-20 left-0 w-full md:hidden">
+          <div className="absolute top-20 left-0 z-50 w-full md:hidden">
             <div className="px-6">
-              <div className="bg-white rounded-md p-8">
+              <div className="bg-white rounded-md p-8 shadow-lg">
                 {/* Navigation Links */}
                 <ul className="flex flex-col items-center justify-center gap-6 border-b-2 border-gray-200 py-4">
                   <li>

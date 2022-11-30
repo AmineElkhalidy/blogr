@@ -8,7 +8,7 @@ Preview image of the website
 ![Preview image](./src/assets/images/blogr.png)
 
 Technologies used:   
--Reactjs
--TypeScript
--Vitejs
--TailwindCSS
+- Reactjs
+- TypeScript
+- Vitejs
+- TailwindCSS

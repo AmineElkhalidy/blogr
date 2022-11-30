@@ -7,7 +7,7 @@ Preview image of the website
 
 ![Preview image](./src/assets/images/blogr.png)
 
-Technologies used:   
+Technologies used:
 - Reactjs
 - TypeScript
 - Vitejs
